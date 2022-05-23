@@ -5,8 +5,8 @@
 //  Created by RFG023ES on 21/5/22.
 //
 
-import UIKit
+import Foundation
 
-class ResponseOk: NSObject {
-
+struct ResponseOk: Decodable {
+    var responseCode: Int
 }

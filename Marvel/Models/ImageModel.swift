@@ -7,6 +7,28 @@
 
 import UIKit
 
-class ImageModel: NSObject {
 
+internal struct ImageModel: Codable {
+    var path: String?
+    var extensionImage: String?
+}
+
+internal struct ImageModelResponse: Decodable {
+    var path: String?
+    var extensionImage: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case path
+        case extensionImage = "extension"
+    }
+}
+
+internal final class ImageModelBinding {
+    static func bind(_ soaImageModel: ImageModelResponse) -> ImageModel {
+        var imageModel = ImageModel()
+        imageModel.path = soaImageModel.path
+        imageModel.extensionImage = soaImageModel.extensionImage
+
+        return imageModel
+    }
 }

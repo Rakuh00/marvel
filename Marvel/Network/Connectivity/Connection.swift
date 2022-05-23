@@ -5,8 +5,13 @@
 //  Created by RFG023ES on 21/5/22.
 //
 
-import UIKit
+import Foundation
+import Alamofire
 
-class Connection: NSObject {
-
+internal final class Connection {
+    
+    // MARK: - Internal Methods
+    static func isConnected() -> Bool {
+        return NetworkReachabilityManager()?.isReachable ?? false
+    }
 }

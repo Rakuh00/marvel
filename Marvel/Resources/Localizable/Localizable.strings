@@ -5,3 +5,25 @@
   Created by RFG023ES on 23/5/22.
   
 */
+
+//MARK: - ERRORS
+"ERROR_SERVER_GENERIC" = "An error has occurred";
+"ERROR_NETWORK" = "No internet connection";
+"ERROR_TITLE" = "ERROR";
+
+//MARK: - BUTTONS
+"BUTTON_CLOSE" = "CLOSE";
+"BUTTON_ACCEPT" = "ACCEPT";
+"BUTTON_RETRY" = "RETRY";
+
+//MARK: - COMMONS
+"COMMONS_DESCRIPTION" = "Description";
+"COMMONS_COMICS" = "Comics";
+"COMMONS_STORIES" = "Stories";
+"COMMONS_EVENTS" = "Events";
+"COMMONS_SERIES" = "Series";
+"COMMONS_NOT_AVAILABLE" = "Not available";
+
+//MARK: - SEARCH
+"SEARCH_PLACEHOLDER" = "Write here the hero's name";
+"SEARCH_BUTTON" = "Search";

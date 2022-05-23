@@ -7,6 +7,20 @@
 
 import UIKit
 
-class ConstructorLoading: NSObject {
+public class ConstructorLoading {
 
+    var viewLoading: LoadingView!
+    
+    init(frame: CGRect) {
+        self.viewLoading = LoadingView(frame: frame)
+    }
+
+    public func showLoading(originViewController: UIViewController) {
+        originViewController.view.addSubview(viewLoading)
+        viewLoading.startLoading()
+    }
+    
+    public func stopLoading() {
+        viewLoading.stopLoading()
+    }
 }
